@@ -9,13 +9,13 @@ export const run = async ({ install, updateCss }) => {
 			postcss.append(
 				new Comment({
 					text: "https://github.com/picocss/pico/issues/201",
-				})
+				}),
 			);
 			postcss.append(
 				new Declaration({
 					prop: "$semantic-root-element",
 					value: `"body div:first-child"`,
-				})
+				}),
 			);
 
 			return {
